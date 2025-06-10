@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="todoLogo.png">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="todoApp">
+        <h1 class="todoH1">To-Do List</h1>
+        <div class="todoMain">
+            <div class="header">
+                <input class="todoInput" type="text" placeholder="New Task">
+                <button class="todoBtn">Add</button>    
+            </div>
+            <div class="todoList">
+                <ul type="none">
+                    <li>
+                        <input type="checkbox"class="checkbox">
+                        <label>Eat</label>
+                        <button><i class="fa-solid fa-minus"></i></button>
+                        <hr>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="checkbox">
+                        <label>Sleep</label>
+                        <button><i class="fa-solid fa-minus"></i></button>
+                        <hr>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="checkbox">
+                        <label>Repeat</label>
+                        <button><i class="fa-solid fa-minus"></i></button>
+                        <hr>
+                    </li>
+                </ul>
+        </div>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>

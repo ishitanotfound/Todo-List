@@ -1,0 +1,110 @@
+* {
+    background-color:rgb(255, 249, 242);
+}
+.todoH1{
+    text-align: center;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.todoApp {
+    height: 550px;
+    width: 60%;
+    margin: auto;
+}
+.todoMain {
+    background-color:white;
+    border: 1.7px solid black;
+    border-radius: 1rem;
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+}
+.todoMain::-webkit-scrollbar {
+  display: none;
+}
+li,ul, .todoList ,label{
+    background-color: inherit;
+    font-size: 1.25rem;
+}
+li {
+    position: relative;
+}
+
+li hr {
+    margin-right: 3.5rem;
+}
+.header {
+    padding: 1.6rem 12rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+.header input{
+    height: 1.85rem;
+    width: 25rem;
+    border: 1.55px solid black;
+    border-radius: 0.5rem;
+    background-color: white;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+.header input:hover, .header input:focus {
+    background-color: rgb(247, 244, 244);
+    border-color: rgba(0, 0, 255);
+    outline: none;
+    transform: scale(1.005);
+}
+.header button {
+    height: 1.85rem;
+    width: 5rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background-color: rgb(247, 244, 244);
+    margin-left: 1rem;
+}
+.header button:hover {
+    cursor: pointer;
+    background-color: rgb(233, 230, 230);
+    transform: scale(1.03);
+}
+.checkbox {
+    transform: scale(1.5);
+}
+.checkbox:hover {
+    cursor: pointer;
+}
+.checkbox:checked {
+    accent-color: grey;    
+}
+.checkbox:checked+label{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+@media (max-width:1050px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .header input {
+        width: 10rem;
+        margin: 0.5rem 0;
+        margin-top: 1rem;
+    }
+}
+li button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 4rem;
+}
+i{
+    background-color: transparent;
+    transform: scale(1.5);
+} 
